@@ -1,8 +1,13 @@
+"""
+Written by Lucas Berbesson
+
+This script generates RGB colors arrays TXT files from png files.
+"""
+
 import os
 from os.path import basename
 
 from PIL import Image
-
 
 for filename in os.listdir('.'):
    if filename.endswith(".png") or filename.endswith(".jpg"):

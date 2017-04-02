@@ -3,7 +3,7 @@
 // Neopixel data pin
 #define PIN 6
 // SD card CS pin
-#define SDPin 4  
+#define SDPin 4
 
 
 // Parameter 1 = number of pixels in strip
@@ -14,9 +14,7 @@
 //   NEO_GRB     Pixels are wired for GRB bitstream (most NeoPixel products)
 //   NEO_RGB     Pixels are wired for RGB bitstream (v1 FLORA pixels, not v2)
 
-
-
-// * SD card attached to SPI bus as follows:
+// * SD card attached as follows:
 // ** MOSI - pin 11
 // ** MISO - pin 12
 // ** CLK - pin 13
@@ -28,14 +26,12 @@
 // Neopixel data pin
 #define PIN 6
 // SD card CS pin
-#define SDPin 4  
-
-
+#define SDPin 4
 
 int buttonPin = 2;
 bool playAnimation = true;
 int buttonState = 0;
-int file_position = 0;  
+int file_position = 0;
 int m_NumberOfFiles = 0;
 bool runAnimation = true;
 String m_FileNames[10];
@@ -73,7 +69,7 @@ void loop() {
    }
    SendFile(m_FileNames[file_position]);
    ClearStrip();
-   
+
 }
 
 
@@ -92,6 +88,7 @@ void setupSDcard() {
  GetFileNamesFromSD(root);
 }
 
+// This function lists files inside the SD card
 void GetFileNamesFromSD(File dir) {
  int fileCount = 0;
  String CurrentFilename = "";
@@ -118,8 +115,8 @@ void GetFileNamesFromSD(File dir) {
    entry.close();
  }
 }
-   
 
+// This function blinks the top led twice and starts the animation
 void SendFile(String Filename) {
  char temp[14];
  runAnimation = true;
@@ -149,7 +146,6 @@ void SendFile(String Filename) {
        break;
        delay(100);
      }
-     
      if (i == (number_of_leds)) {
        i=0;
        strip.show();
@@ -159,9 +155,7 @@ void SendFile(String Filename) {
      green = dataFile.parseInt();
      blue = dataFile.parseInt();
      strip.setPixelColor(i, red, green, blue);
-     i++;  
-
-     
+     i++;
    }
    Serial.print("closing file");
    dataFile.close();
@@ -172,7 +166,7 @@ void SendFile(String Filename) {
    }
  }
 
-
+// Turn all LED off on the pixelstick
 void ClearStrip() {
  int x;
  for(x=0;x<number_of_leds;x++) {
