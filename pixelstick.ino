@@ -1,3 +1,9 @@
+"""
+Written by Lucas Berbesson for LA FABRIQUE DIY
+
+LICENSE MIT
+"""
+
 #include <Adafruit_NeoPixel.h>
 
 // Neopixel data pin
