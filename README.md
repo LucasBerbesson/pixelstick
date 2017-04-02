@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # How to make a DIY Pixel Stick   
 
 Please watch my related video     
@@ -101,3 +102,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+=======
+The pixelstick is an ADRESSABLE RGB LED STRIP controlled by an Arduino that can display all sorts of animations to make awesome [lightpaintings](https://fr.wikipedia.org/wiki/Light_painting) photographs. 
+
+The Arduino circuit contains an SD Card module where I can upload the images I want to display. 
+>>>>>>> 80f564d46f02898cfb957344280f21e4072d2121
