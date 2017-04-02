@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # How to make a DIY Pixel Stick   
 
 Please watch my related video     
@@ -71,8 +70,8 @@ A standard pushbutton on pin 2 of the arduino (check the Arduino example to lear
 A 40 LEDS long adressable strip (these have 3 wires) linked to the same Arduino as follow :
 * DIN -> pin 6
 
-** Be careful ** : Adressable strips only run in one direction, the data input of the arduino should enter the strip (DI) (check the arrow on the strip)  
-** Be careful 2** : if you wire the 5V and GND of the strip directly to the Arduino the amount of current required by the strip will burn your board. Instead power the arduino in parallel with the strip from a battery.
+**Be careful** : Adressable strips only run in one direction, the data input of the arduino should enter the strip (DI) (check the arrow on the strip)  
+**Be careful 2** : if you wire the 5V and GND of the strip directly to the Arduino the amount of current required by the strip will burn your board. Instead power the arduino in parallel with the strip from a battery.
 
 My Pixelstick is made of 40 LEDS. As each RGB LED draw 40mA, I used a 2A 5V smartphone backup battery to power the pixelstick (arduino + leds).
 
@@ -102,8 +101,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-=======
-The pixelstick is an ADRESSABLE RGB LED STRIP controlled by an Arduino that can display all sorts of animations to make awesome [lightpaintings](https://fr.wikipedia.org/wiki/Light_painting) photographs. 
 
-The Arduino circuit contains an SD Card module where I can upload the images I want to display. 
->>>>>>> 80f564d46f02898cfb957344280f21e4072d2121
