@@ -1,7 +1,6 @@
 # How to make a DIY Pixel Stick   
 
-Please watch my related video     
- https://www.youtube.com/watch?v=Cxnwvp_BdA0  
+Please watch the [related video]( https://www.youtube.com/watch?v=Cxnwvp_BdA0  )    
 and subscribe to my Youtube channel if you like this project.
 
 ## Introduction
